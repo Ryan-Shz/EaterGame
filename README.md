@@ -1,6 +1,6 @@
 # EaterGame
 
-An simple Android maze game with the 15x15 maze shown in the following illustration:
+An simple android maze game with the 15x15 maze shown in the following illustration:
 ```
 ############### 
 #.............# 
