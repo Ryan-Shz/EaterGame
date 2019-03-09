@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ryan.eater.game.MainActivity">
+
+    <com.ryan.eater.game.GameView
+        android:id="@+id/game_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/up_btn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/up_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:contentDescription="@string/app_name"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="20dp"
+        android:src="@drawable/up"
+        app:layout_constraintBottom_toTopOf="@+id/down_btn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:id="@+id/left_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="57dp"
+        android:contentDescription="@string/app_name"
+        android:paddingBottom="10dp"
+        android:paddingLeft="30dp"
+        android:paddingStart="30dp"
+        android:paddingTop="10dp"
+        android:src="@drawable/left"
+        app:layout_constraintRight_toLeftOf="@+id/up_btn"
+        app:layout_constraintTop_toTopOf="@+id/up_btn"
+        tools:ignore="RtlSymmetry" />
+
+    <ImageView
+        android:id="@+id/right_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:paddingBottom="10dp"
+        android:paddingEnd="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="10dp"
+        android:src="@drawable/right"
+        app:layout_constraintLeft_toRightOf="@+id/up_btn"
+        app:layout_constraintTop_toTopOf="@id/left_btn"
+        tools:ignore="RtlSymmetry" />
+
+    <ImageView
+        android:id="@+id/down_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/app_name"
+        android:padding="10dp"
+        android:src="@drawable/down"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteX="167dp" />
+
+</android.support.constraint.ConstraintLayout>
